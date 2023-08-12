@@ -11,12 +11,17 @@ export default {
         base: '900px'
       },
       colors: {
-        yellow: 'hsl(51, 100%, 49%)',
-        red: 'hsl(7, 99%, 70%)',
+        yellow: {
+          DEFAULT: 'hsl(51, 100%, 49%)'
+        },
+        red: {
+          DEFAULT: 'hsl(7, 99%, 70%)'
+        },
         cyan: {
           DEFAULT: 'hsl(167, 40%, 24%)',
           100: 'hsl(198, 62%, 26%)',
-          200: 'hsl(168, 34%, 41%)'
+          200: 'hsl(168, 34%, 41%)',
+          300: '#3ebefd'
         },
         blue: {
           DEFAULT: 'hsl(212, 27%, 19%)',
@@ -26,7 +31,11 @@ export default {
         }
       },
       fontFamily: {
-        barlow: "'Barlow', sans-serif"
+        barlow: "'Barlow', sans-serif",
+        fraunces: "'Fraunces', serif"
+      },
+      backgroundImage: {
+        header: "url('./src/assets/mobile/header.jpg')"
       }
     },
   },
